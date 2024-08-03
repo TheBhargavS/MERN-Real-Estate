@@ -8,6 +8,7 @@ import Profile from './pages/Profile.js'
 import Header from './components/Header.jsx'
 import './App.css';
 import { PrivateRoute } from './components/PrivateRoute.js'
+import { CreateListing } from './pages/CreateListing.js'
 
 function App() {
   return <>
@@ -20,6 +21,7 @@ function App() {
          <Route path='/About'  element={<About/>}  />
          <Route element={<PrivateRoute/>}>
             <Route path='/Profile' element={<Profile/>} />
+            <Route path="/create-listing" element={<CreateListing/>}  />
          </Route>
        
          
